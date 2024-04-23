@@ -1,0 +1,14 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("img/f.jpg");
+}
+
+p, ol {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 30px;
+    background-color: rgba(78, 102, 85, 0.44);
+    text-align: center;
+}
