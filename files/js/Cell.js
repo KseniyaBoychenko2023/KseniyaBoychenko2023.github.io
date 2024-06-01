@@ -1,4 +1,4 @@
-(function() {
+(function () {
     window.addEventListener('load', init);
     function init() {
         document.getElementById("light").addEventListener("click", lightTheme);
@@ -46,4 +46,5 @@
         document.getElementById('imgTheory').src = 'https://art.kartinkof.club/uploads/posts/2023-07/1689048195_art-kartinkof-club-p-idei-dlya-srisovki-tsitoplazma-57.png';
         document.getElementById('imgText').innerText = "Цитоплазма клетки";
     }
+
 })();

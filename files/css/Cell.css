@@ -11,7 +11,7 @@ body {
     background-color: var(--bg-color);
 }
 
-@media screen and (1400px <= width) {
+@media screen and (1400px <=width) {
     header {
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -41,7 +41,7 @@ body {
         padding: 0px 80px 0px 0px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 20px;
     }
 
@@ -79,7 +79,7 @@ body {
     }
 }
 
-@media screen and (1200px <= width < 1400px) {
+@media screen and (1200px <=width < 1400px) {
     header {
         display: grid;
         grid-template-rows: 0.8fr 1fr;
@@ -94,7 +94,7 @@ body {
         padding: 0px 30px 0px 30px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 20px;
     }
 
@@ -148,7 +148,7 @@ body {
 
 }
 
-@media screen and (960px <= width < 1200px) {
+@media screen and (960px <=width < 1200px) {
     header {
         display: grid;
         grid-template-rows: 0.8fr 1fr;
@@ -163,7 +163,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 16px;
     }
 
@@ -214,10 +214,10 @@ body {
         display: grid;
         grid-template-columns: 1fr 12fr;
     }
-    
+
 }
 
-@media screen and ( width < 960px) {
+@media screen and (width < 960px) {
     header {
         width: 20%;
         height: 100%;
@@ -231,7 +231,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 14px;
         padding: 10px 0px;
         border: solid 1px rgba(0, 0, 0, 0.1);
@@ -260,11 +260,11 @@ body {
         font-size: 30px !important;
         margin: -5px !important;
     }
-    
+
     #lg {
         font-size: 10px !important;
     }
-    
+
     #lg2 {
         font-size: 8px !important;
     }
@@ -294,14 +294,15 @@ body {
         display: grid;
         grid-template-rows: 1fr auto;
     }
-    
+
     #cell {
         width: 200px !important;
         margin: 0 auto !important;
         display: block !important;
     }
 
-    #imgTheory, #imgTheory2 {
+    #imgTheory,
+    #imgTheory2 {
         width: 200px !important;
     }
 
@@ -326,7 +327,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 10px;
         padding: 10px 0px;
         border: solid 1px rgba(0, 0, 0, 0.1);
@@ -355,11 +356,11 @@ body {
         font-size: 20px !important;
         margin: -3px !important;
     }
-    
+
     #lg {
         font-size: 8px !important;
     }
-    
+
     #lg2 {
         font-size: 6px !important;
     }
@@ -389,14 +390,15 @@ body {
         display: grid;
         grid-template-rows: 1fr auto;
     }
-    
+
     #cell {
         width: 100px !important;
         margin: 0 auto !important;
         display: block !important;
     }
 
-    #imgTheory, #imgTheory2 {
+    #imgTheory,
+    #imgTheory2 {
         width: 100px !important;
     }
 
@@ -406,18 +408,35 @@ body {
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 #general {
-    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #cell {
-    margin-top: 50px !important;
-    margin: 30px;
-    width: 200px;
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+    border: solid 1px var(--border-header);
+    -webkit-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    -moz-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    transition: transform 0.7s ease;
+    margin-top: 10px;
+}
+
+#cell:hover {
+    transform: scale(1.2);
 }
 
 #ck {
@@ -443,7 +462,8 @@ h1, h2, h3 {
     padding-left: 30px;
 }
 
-#imgTheory, #imgTheory2 {
+#imgTheory,
+#imgTheory2 {
     width: 500px;
     height: auto;
     margin: 0 auto;
@@ -468,7 +488,9 @@ h1, h2, h3 {
     padding-right: 40px;
 }
 
-#del, #cit, #citKl {
+#del,
+#cit,
+#citKl {
     background-color: var(--bg-button21);
     color: var(--text-butt2);
     border: 2px solid var(--border-button);
@@ -477,7 +499,9 @@ h1, h2, h3 {
     display: block;
 }
 
-#del:hover, #cit:hover, #citKl:hover {
+#del:hover,
+#cit:hover,
+#citKl:hover {
     background-color: var(--bg-button1);
     color: var(--text-butt1);
 }
@@ -486,7 +510,8 @@ h1, h2, h3 {
     text-align: justify;
 }
 
-#imgText, #imgText2 {
+#imgText,
+#imgText2 {
     text-align: center;
     margin: 0;
     font-style: italic;
@@ -515,25 +540,25 @@ header {
     font-weight: bold;
     font-size: 50px;
     margin: -13px;
-    padding: 2px, 2px, 0px, 2px;
+    padding: 2px 2px 0px 2px;
 }
 
 #lg {
     margin: 0;
-    padding: 0px, 2px;
+    padding: 0px 2px;
     font-weight: normal;
     font-size: 20px;
 }
 
 #lg2 {
     margin: 0;
-    padding: 0px, 2px, 5px, 2px;
+    padding: 0px 2px 5px 2px;
     font-weight: normal;
     font-size: 15px;
 }
 
-.menu li { 
-    
+.menu li {
+
     list-style: none;
     position: relative;
 }
@@ -543,7 +568,7 @@ a {
     font-weight: normal;
 }
 
-.menu ul { 
+.menu ul {
     position: absolute;
     left: 0;
     top: 100%;
@@ -619,20 +644,18 @@ button {
     color: var(--text-butt2);
 }
 
-
-
 :root {
-    --text-butt1:   #c5d4f3;
+    --text-butt1: #c5d4f3;
     --text-butt2: rgb(0, 0, 0);
     --text-color: rgb(0, 0, 0);
-    --border-button:  rgb(46, 46, 46);
+    --border-button: rgb(46, 46, 46);
     --bg-button1: rgb(46, 46, 46);
     --bg-button2: #A0AECD;
     --border-header: rgb(46, 46, 46);
     --bg-color: #A0AECD;
     --bx-shadow: rgba(0, 0, 0, 0.24);
-    --bg-grad1: rgba(255,255,255,1);
-    --bg-grad2: rgba(160,175,205,1);
+    --bg-grad1: rgba(255, 255, 255, 1);
+    --bg-grad2: rgba(160, 175, 205, 1);
 }
 
 [data-theme="dark"] {
@@ -645,6 +668,6 @@ button {
     --border-header: #A0AECD;
     --bg-color: rgb(46, 46, 46);
     --bx-shadow: rgba(255, 255, 255, 0.24);
-    --bg-grad1: rgba(24,24,24,1);
-    --bg-grad2: rgba(23,28,38,1);
+    --bg-grad1: rgba(24, 24, 24, 1);
+    --bg-grad2: rgba(23, 28, 38, 1);
 }

@@ -1,4 +1,4 @@
-(function() {
+(function () {
     window.addEventListener('load', init);
     function init() {
         document.getElementById("light").addEventListener("click", lightTheme);

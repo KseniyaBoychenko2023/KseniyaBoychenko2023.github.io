@@ -7,12 +7,12 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Noto Serif", serif;
-    
+
     color: var(--text-color);
     background-color: var(--bg-color);
 }
 
-@media screen and (1400px <= width) {
+@media screen and (1400px <=width) {
     header {
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -27,7 +27,7 @@ body {
         padding: 0px 80px 0px 0px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 20px;
     }
 
@@ -63,9 +63,42 @@ body {
     #test li {
         font-size: 18px;
     }
+
+    #imIn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #buttAll {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+    }
+
+    #osobAndFun {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #dopInf {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    #firTw,
+    #secTw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media screen and (1200px <= width < 1400px) {
+@media screen and (1200px <=width < 1400px) {
     header {
         display: grid;
         grid-template-rows: 0.8fr 1fr;
@@ -80,7 +113,7 @@ body {
         padding: 0px 30px 0px 30px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 20px;
     }
 
@@ -117,9 +150,41 @@ body {
         font-size: 18px;
     }
 
+    #imIn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #buttAll {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+    }
+
+    #osobAndFun {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #dopInf {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    #firTw,
+    #secTw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media screen and (960px <= width < 1200px) {
+@media screen and (960px <=width < 1200px) {
     header {
         display: grid;
         grid-template-rows: 0.8fr 1fr;
@@ -134,7 +199,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 16px;
     }
 
@@ -170,10 +235,53 @@ body {
     #test li {
         font-size: 14px;
     }
-    
+
+    #imgInf,
+    #imgInf2 {
+        width: 450px !important;
+
+    }
+
+    #dopInf {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+
+    #imIn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #buttAll {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 11fr;
+    }
+
+    #osobAndFun {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #dopInf {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    #firTw,
+    #secTw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-@media screen and ( width < 960px) {
+@media screen and (width < 960px) {
     header {
         width: 20%;
         height: 100%;
@@ -187,7 +295,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 14px;
         padding: 10px 0px;
         border: solid 1px rgba(0, 0, 0, 0.1);
@@ -216,11 +324,11 @@ body {
         font-size: 30px !important;
         margin: -5px !important;
     }
-    
+
     #lg {
         font-size: 10px !important;
     }
-    
+
     #lg2 {
         font-size: 8px !important;
     }
@@ -241,14 +349,89 @@ body {
         padding-left: 20%;
     }
 
-    .cont-text {
-        margin: 0;
-        padding: 12px;
+    #imgInf,
+    #imgInf2 {
+        width: 220px !important;
+        margin: 0 auto;
+        display: block;
     }
-    
+
+    #img img {
+        width: 200px !important;
+        margin-bottom: 40px !important;
+    }
+
+    #pokr,
+    #ferr {
+        width: 200px !important;
+    }
+
+    #dopInf {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        padding-top: 0 !important;
+    }
+
+    #imIn {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    #buttAll {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #firTw,
+    #secTw {
+        margin-bottom: 20px;
+    }
+
+    #general {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    #osobAndFun {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 0px 40px !important;
+    }
+
+    #dopInf {
+        display: grid;
+        grid-template-rows: 1fr auto auto auto;
+    }
+
+    #firTw,
+    #secTw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #fir,
+    #sec,
+    #th,
+    #four {
+        padding: 7px 3px !important;
+        font-size: 10px !important;
+    }
+
+    #oneText,
+    #twoText {
+        padding-top: 10px !important;
+    }
+
+    #osob,
+    #fun {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
-@media screen and (width < 300px) {
+@media screen and (width < 400px) {
     header {
         width: 20%;
         height: 100%;
@@ -262,7 +445,7 @@ body {
         padding: 0px 20px 0px 20px;
     }
 
-    .menu li { 
+    .menu li {
         font-size: 10px;
         padding: 10px 0px;
         border: solid 1px rgba(0, 0, 0, 0.1);
@@ -291,11 +474,11 @@ body {
         font-size: 20px !important;
         margin: -3px !important;
     }
-    
+
     #lg {
         font-size: 8px !important;
     }
-    
+
     #lg2 {
         font-size: 6px !important;
     }
@@ -312,14 +495,220 @@ body {
         padding-left: 20%;
     }
 
-    .cont-text {
-        margin: 0;
-        padding: 10px;
-    }
-
     #test li {
         font-size: 6px;
     }
+
+    #imgInf,
+    #imgInf2 {
+        width: 140px !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #img img {
+        width: 130px !important;
+        margin-bottom: 40px !important;
+    }
+
+    #pokr,
+    #ferr {
+        width: 130px !important;
+    }
+
+    #dopInf {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        padding-top: 0 !important;
+    }
+
+    #imIn {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
+    #buttAll {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #general {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 30px 0px !important;
+    }
+
+    #osobAndFun {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        padding: 0px 20px !important;
+    }
+
+    #dopInf {
+        display: grid;
+        grid-template-rows: 1fr auto auto auto;
+        padding: 0px 20px !important;
+    }
+
+    #firTw,
+    #secTw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0 !important;
+    }
+
+    #fir,
+    #sec,
+    #th,
+    #four {
+        padding: 4px 2px !important;
+        font-size: 8px !important;
+        margin-bottom: 15px !important;
+    }
+
+    #oneText,
+    #twoText {
+        padding-top: 10px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #inf {
+        padding-top: 10px !important;
+    }
+
+    #osob,
+    #fun {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #osob li,
+    #fun li {
+        margin-right: 10px !important;
+        margin-left: 20px !important;
+    }
+}
+
+#general {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#osob li {
+    list-style-type: decimal;
+}
+
+#osob li,
+#fun li {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+#img img {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    border: solid 1px var(--border-header);
+    -webkit-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    -moz-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+}
+
+#imgInf,
+#imgInf2 {
+    padding-bottom: 30px;
+    width: 500px;
+}
+
+.dop {
+    margin: 0;
+    padding: 0;
+}
+
+#inf {
+    margin: 0;
+    padding: 40px 0px;
+}
+
+#pokr,
+#ferr {
+    transition: transform 0.7s ease;
+}
+
+#pokr:hover,
+#ferr:hover {
+    transform: scale(1.5);
+}
+
+#textInf {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+#dopInf {
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+#oneText,
+#twoText {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#pokr,
+#ferr {
+    width: 300px;
+    margin: 20px;
+    padding: 0;
+}
+
+#oneImg,
+#twoImg {
+    display: flex;
+    justify-content: center;
+}
+
+.cont-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#fir,
+#sec,
+#th,
+#four {
+    background-color: var(--bg-button21);
+    color: var(--text-butt2);
+    border: 2px solid var(--border-button);
+    transition: 0.7s;
+    margin: 0 auto;
+    display: block;
+}
+
+#fir:hover,
+#sec:hover,
+#th:hover,
+#four:hover {
+    background-color: var(--bg-button1);
+    color: var(--text-butt1);
 }
 
 header {
@@ -345,25 +734,25 @@ header {
     font-weight: bold;
     font-size: 50px;
     margin: -13px;
-    padding: 2px, 2px, 0px, 2px;
+    padding: 2px 2px 0px 2px;
 }
 
 #lg {
     margin: 0;
-    padding: 0px, 2px;
+    padding: 0px 2px;
     font-weight: normal;
     font-size: 20px;
 }
 
 #lg2 {
     margin: 0;
-    padding: 0px, 2px, 5px, 2px;
+    padding: 0px 2px 5px 2px;
     font-weight: normal;
     font-size: 15px;
 }
 
-.menu li { 
-    
+.menu li {
+
     list-style: none;
     position: relative;
 }
@@ -373,7 +762,7 @@ a {
     font-weight: normal;
 }
 
-.menu ul { 
+.menu ul {
     position: absolute;
     left: 0;
     top: 100%;
@@ -452,17 +841,17 @@ button {
 
 
 :root {
-    --text-butt1:   #c5d4f3;
+    --text-butt1: #c5d4f3;
     --text-butt2: rgb(0, 0, 0);
     --text-color: rgb(0, 0, 0);
-    --border-button:  rgb(46, 46, 46);
+    --border-button: rgb(46, 46, 46);
     --bg-button1: rgb(46, 46, 46);
     --bg-button2: #A0AECD;
     --border-header: rgb(46, 46, 46);
     --bg-color: #A0AECD;
     --bx-shadow: rgba(0, 0, 0, 0.24);
-    --bg-grad1: rgba(255,255,255,1);
-    --bg-grad2: rgba(160,175,205,1);
+    --bg-grad1: rgba(255, 255, 255, 1);
+    --bg-grad2: rgba(160, 175, 205, 1);
 }
 
 [data-theme="dark"] {
@@ -475,6 +864,6 @@ button {
     --border-header: #A0AECD;
     --bg-color: rgb(46, 46, 46);
     --bx-shadow: rgba(255, 255, 255, 0.24);
-    --bg-grad1: rgba(24,24,24,1);
-    --bg-grad2: rgba(23,28,38,1);
+    --bg-grad1: rgba(24, 24, 24, 1);
+    --bg-grad2: rgba(23, 28, 38, 1);
 }
