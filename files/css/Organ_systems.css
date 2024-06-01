@@ -391,7 +391,8 @@ h3 {
 }
 
 ul {
-    padding: 0;
+    padding: 5px;
+    padding-left: 25px;
 }
 
 .images:hover {
@@ -440,7 +441,7 @@ header {
     font-weight: bold;
     font-size: 50px;
     margin: -13px;
-    padding: 2px 2px 0px, 2px;
+    padding: 2px 2px 0px 2px;
 }
 
 #lg {
