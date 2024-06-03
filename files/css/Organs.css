@@ -63,6 +63,23 @@ body {
     #test li {
         font-size: 18px;
     }
+
+    #img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #direct {
+        padding: 0px 100px !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (1200px <=width < 1400px) {
@@ -117,6 +134,27 @@ body {
         font-size: 18px;
     }
 
+    #img img {
+        width: 350px !important;
+    }
+
+    #img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #direct {
+        padding: 0px 100px !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media screen and (960px <=width < 1200px) {
@@ -169,6 +207,27 @@ body {
 
     #test li {
         font-size: 14px;
+    }
+
+    #img img {
+        width: 280px !important;
+    }
+
+    #img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #direct {
+        padding: 0px 100px !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -246,9 +305,37 @@ body {
         padding: 12px;
     }
 
+    #img img {
+        width: clamp(90px, 100%, 350px) !important;
+    }
+    
+    #img {
+        padding: 0px 20px !important;
+    }
+
+    #img {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #infor {
+        padding: 30px 20px 10px 20px !important;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #direct {
+        padding: 0px 100px !important;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
 }
 
-@media screen and (width < 300px) {
+@media screen and (width < 400px) {
     header {
         width: 20%;
         height: 100%;
@@ -320,6 +407,103 @@ body {
     #test li {
         font-size: 6px;
     }
+
+    #img img {
+        width: 60px !important;
+    }
+    
+    #img {
+        padding: 0px 15px !important;
+    }
+
+    #img {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #infor {
+        padding: 30px 10px 0px 0px !important;
+    }
+
+    #data {
+        padding: 0 !important;
+    }
+
+    #data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #direct {
+        padding: 0px 0px !important;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.container div {
+    margin: 0;
+}
+
+#data {
+    padding: 20px;
+    padding-bottom: 0 !important;
+}
+
+#infor {
+    padding: 30px 40px 10px 40px;
+}
+
+#img img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    transition: transform 0.7s ease;
+}
+
+#name, #lat {
+    text-align: center;
+}
+
+#img div {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.vis img {
+    transform: scale(1.1);
+    border: solid 2px var(--border-header);
+}
+
+#butt button {
+    background-color: var(--bg-button21);
+    color: var(--text-butt2);
+    border: 2px solid var(--border-button);
+    transition: 0.7s;
+    display: block;
+    margin: 10px auto;
+}
+
+#butt button:hover {
+    background-color: var(--bg-button1);
+    color: var(--text-butt1);
+}
+
+#infor {
+    display: grid;
+    grid-template-rows: 1fr 1fr 8fr;
+}
+
+#butt {
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -328,6 +512,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .log {
@@ -436,6 +621,8 @@ button {
 .container {
     width: 100%;
     background: linear-gradient(90deg, var(--bg-grad1) 0%, var(--bg-grad2) 50%, var(--bg-grad1) 100%);
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 #light {

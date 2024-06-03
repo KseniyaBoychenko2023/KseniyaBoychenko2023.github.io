@@ -289,6 +289,7 @@ body {
         -webkit-box-shadow: 9px -3px 11px 2px var(--bx-shadow);
         -moz-box-shadow: 9px -3px 11px 2px var(--bx-shadow);
         box-shadow: 9px -3px 11px 2px var(--bx-shadow);
+        z-index: 1;
     }
 
     .menu {
