@@ -42,9 +42,9 @@
                 .then(response => response.json());
             let n = 0;
             let i = "";
-            for(let organ of data.Organs) {
-                if(i != organ.name){
-                    if(n < cnt && n >= cnt-6) {
+            for (let organ of data.Organs) {
+                if (i != organ.name) {
+                    if (n < cnt && n >= cnt - 6) {
                         img = document.createElement('img');
                         img.src = organ.img;
                         div = document.createElement('div');
@@ -87,17 +87,17 @@
     }
 
     function toBack() {
-        if(cnt > 6 && onOrOff) {
-            document.getElementById("img").innerHTML="";
+        if (cnt > 6 && onOrOff) {
+            document.getElementById("img").innerHTML = "";
             cnt -= 6;
             onOrOff = false;
             loadData();
-      }
+        }
     }
 
     function toForward() {
-        if(cnt < 42 && onOrOff) {
-            document.getElementById("img").innerHTML="";
+        if (cnt < 42 && onOrOff) {
+            document.getElementById("img").innerHTML = "";
             cnt += 6;
             onOrOff = false;
             loadData();

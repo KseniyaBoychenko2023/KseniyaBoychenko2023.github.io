@@ -265,7 +265,8 @@ body {
         width: 160px !important;
     }
 
-    .text1, .text2 {
+    .text1,
+    .text2 {
         padding: 10px 30px !important;
     }
 
@@ -352,7 +353,8 @@ body {
         width: 80px !important;
     }
 
-    .text1, .text2 {
+    .text1,
+    .text2 {
         padding: 10px 20px !important;
     }
 

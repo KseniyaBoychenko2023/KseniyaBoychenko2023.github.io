@@ -308,7 +308,7 @@ body {
     #img img {
         width: clamp(90px, 100%, 350px) !important;
     }
-    
+
     #img {
         padding: 0px 20px !important;
     }
@@ -411,7 +411,7 @@ body {
     #img img {
         width: 60px !important;
     }
-    
+
     #img {
         padding: 0px 15px !important;
     }
@@ -467,7 +467,8 @@ h3 {
     transition: transform 0.7s ease;
 }
 
-#name, #lat {
+#name,
+#lat {
     text-align: center;
 }
 
