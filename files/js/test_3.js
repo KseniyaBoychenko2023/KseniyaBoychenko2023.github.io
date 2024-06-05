@@ -106,7 +106,7 @@
         document.getElementById("22").className = ('first');
         document.getElementById("23").classList.remove('vis');
         document.getElementById("23").className = ('first');
-        s2++;
+        s2 = 0;
     }
 
     function b22() {
@@ -124,7 +124,7 @@
         document.getElementById("22").className = ('first');
         document.getElementById("21").classList.remove('vis');
         document.getElementById("21").className = ('first');
-        s2 = 0;
+        s2++;
     }
 
     function b31() {
@@ -133,7 +133,7 @@
         document.getElementById("32").className = ('first');
         document.getElementById("33").classList.remove('vis');
         document.getElementById("33").className = ('first');
-        s3 = 0;
+        s3++;
     }
 
     function b32() {
@@ -151,7 +151,7 @@
         document.getElementById("32").className = ('first');
         document.getElementById("31").classList.remove('vis');
         document.getElementById("31").className = ('first');
-        s3++;
+        s3 = 0;
     }
 
     function b41() {
@@ -187,7 +187,7 @@
         document.getElementById("52").className = ('first');
         document.getElementById("53").classList.remove('vis');
         document.getElementById("53").className = ('first');
-        s5++;
+        s5 = 0;
     }
 
     function b52() {
@@ -196,7 +196,7 @@
         document.getElementById("53").className = ('first');
         document.getElementById("51").classList.remove('vis');
         document.getElementById("51").className = ('first');
-        s5 = 0;
+        s5++;
     }
 
     function b53() {
@@ -223,7 +223,7 @@
         document.getElementById("63").className = ('first');
         document.getElementById("61").classList.remove('vis');
         document.getElementById("61").className = ('first');
-        s6 = 0;
+        s6++;
     }
 
     function b63() {
@@ -232,7 +232,7 @@
         document.getElementById("62").className = ('first');
         document.getElementById("61").classList.remove('vis');
         document.getElementById("61").className = ('first');
-        s6++;
+        s6 = 0;
     }
 
     function b71() {
@@ -250,7 +250,7 @@
         document.getElementById("73").className = ('first');
         document.getElementById("71").classList.remove('vis');
         document.getElementById("71").className = ('first');
-        s7 = 0;
+        s7++;
     }
 
     function b73() {
@@ -259,7 +259,7 @@
         document.getElementById("72").className = ('first');
         document.getElementById("71").classList.remove('vis');
         document.getElementById("71").className = ('first');
-        s7++;
+        s7 = 0;
     }
 
     function b81() {
@@ -305,7 +305,7 @@
         document.getElementById("93").className = ('first');
         document.getElementById("91").classList.remove('vis');
         document.getElementById("91").className = ('first');
-        s9 = 0;
+        s9++;
     }
 
     function b93() {
@@ -314,7 +314,7 @@
         document.getElementById("92").className = ('first');
         document.getElementById("91").classList.remove('vis');
         document.getElementById("91").className = ('first');
-        s9++;
+        s9 = 0;
     }
 
     function b101() {
@@ -354,7 +354,7 @@
                 button.className = ('first');
             });
 
-            ['13', '21', '33', '42', '51', '63', '73', '81', '93', '101'].forEach(function (id) {
+            ['13', '23', '31', '42', '52', '62', '72', '81', '92', '101'].forEach(function (id) {
                 document.getElementById(id).className = 'right';
             });
 

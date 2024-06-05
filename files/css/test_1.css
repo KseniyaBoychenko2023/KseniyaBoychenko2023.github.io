@@ -64,21 +64,16 @@ body {
         font-size: 18px;
     }
 
-    #img {
+    #testik {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #data {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    #direct {
-        padding: 0px 100px !important;
+    #ok {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0px 200px;
     }
 }
 
@@ -134,27 +129,17 @@ body {
         font-size: 18px;
     }
 
-    #img img {
-        width: 350px !important;
-    }
-
-    #img {
+    #testik {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #data {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    #direct {
-        padding: 0px 100px !important;
+    #ok {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0px 200px;
     }
-
 }
 
 @media screen and (960px <=width < 1200px) {
@@ -209,27 +194,17 @@ body {
         font-size: 14px;
     }
 
-    #img img {
-        width: 280px !important;
-    }
-
-    #img {
+    #testik {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #data {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    #direct {
-        padding: 0px 100px !important;
+    #ok {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0px 200px;
     }
-
 }
 
 @media screen and (width < 960px) {
@@ -300,42 +275,36 @@ body {
         padding-left: 20%;
     }
 
-    .cont-text {
-        margin: 0;
-        padding: 12px;
-    }
-
-    #img img {
-        width: clamp(90px, 100%, 350px) !important;
-    }
-
-    #img {
-        padding: 0px 20px !important;
-    }
-
-    #img {
+    #testik {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #infor {
-        padding: 30px 20px 10px 20px !important;
+    #zag {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
     }
 
-    #data {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    #direct {
-        padding: 0px 100px !important;
+    #ok {
         display: grid;
         grid-template-rows: 1fr 1fr;
+        padding: 0px 40px 40px 40px;
     }
 
+    .vis,
+    .first,
+    .right,
+    .wrong {
+        width: 170px !important;
+    }
+
+    #end,
+    #ag {
+        width: 140px !important;
+    }
 }
 
-@media screen and (width < 400px) {
+@media screen and (width < 300px) {
     header {
         width: 20%;
         height: 100%;
@@ -399,112 +368,137 @@ body {
         padding-left: 20%;
     }
 
-    .cont-text {
-        margin: 0;
-        padding: 10px;
-    }
-
     #test li {
         font-size: 6px;
     }
 
-    #img img {
-        width: 60px !important;
-    }
-
-    #img {
-        padding: 0px 15px !important;
-    }
-
-    #img {
+    #testik {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    #infor {
-        padding: 30px 10px 0px 0px !important;
+    #zag {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
     }
 
-    #data {
-        padding: 0 !important;
-    }
-
-    #data {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #direct {
-        padding: 0px 0px !important;
+    #ok {
         display: grid;
         grid-template-rows: 1fr 1fr;
+        padding: 0px 40px 40px 40px;
+    }
+
+    .vis,
+    .first,
+    .right,
+    .wrong {
+        width: 130px !important;
+    }
+
+    #end,
+    #ag {
+        width: 120px !important;
     }
 }
 
+.res {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h1,
+h2,
 h3 {
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
-.container div {
-    margin: 0;
-}
-
-#data {
+#testik {
     padding: 20px;
-    padding-bottom: 0 !important;
+    padding-top: 0;
 }
 
-#infor {
-    padding: 30px 40px 10px 40px;
+#zag {
+    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
-#img img {
-    display: block;
-    margin: 0 auto;
-    width: 400px;
-    transition: transform 0.7s ease;
+.vop {
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
-#name,
-#lat {
+.qus {
     text-align: center;
 }
 
-#img div {
-    padding: 15px 0px;
-    display: flex;
-    align-items: center;
-}
-
-.vis img {
-    transform: scale(1.1);
-    border: solid 2px var(--border-header);
-}
-
-#butt button {
+.first {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    width: 300px;
     background-color: var(--bg-button21);
     color: var(--text-butt2);
     border: 2px solid var(--border-button);
     transition: 0.7s;
-    display: block;
-    margin: 10px auto;
 }
 
-#butt button:hover {
+.first:hover {
     background-color: var(--bg-button1);
     color: var(--text-butt1);
 }
 
-#infor {
-    display: grid;
-    grid-template-rows: 1fr 1fr 8fr;
+.vis {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    width: 300px;
+    border: 2px solid var(--border-button);
+    background-color: var(--bg-button1);
+    color: var(--text-butt1);
 }
 
-#butt {
+#end,
+#ag {
+    width: 250px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: var(--bg-button21);
+    color: var(--text-butt2);
+    border: 3px solid var(--border-button);
+    transition: 0.7s;
+}
+
+#end:hover,
+#ag:hover {
+    background-color: var(--bg-button1);
+    color: var(--text-butt1);
+}
+
+.right {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    width: 300px;
+    border: 2px solid var(--border-button);
+    background-color: #16c40a;
+    color: #000000;
+}
+
+.wrong {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    width: 300px;
+    border: 2px solid var(--border-button);
+    background-color: #8f0000;
+    color: #ffffff;
+}
+
+.buttAll {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 header {
@@ -513,7 +507,6 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
 }
 
 .log {
@@ -622,8 +615,6 @@ button {
 .container {
     width: 100%;
     background: linear-gradient(90deg, var(--bg-grad1) 0%, var(--bg-grad2) 50%, var(--bg-grad1) 100%);
-    display: grid;
-    grid-template-rows: 1fr auto;
 }
 
 #light {

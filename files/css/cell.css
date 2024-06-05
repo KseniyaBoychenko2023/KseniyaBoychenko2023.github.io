@@ -7,7 +7,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Noto Serif", serif;
-
     color: var(--text-color);
     background-color: var(--bg-color);
 }
@@ -21,6 +20,21 @@ body {
         -webkit-box-shadow: 4px 10px 14px 2px var(--bx-shadow);
         -moz-box-shadow: 4px 10px 14px 2px var(--bx-shadow);
         box-shadow: 4px 10px 14px 2px var(--bx-shadow);
+    }
+
+    #theory {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #a {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 12fr;
     }
 
     .menu {
@@ -62,18 +76,6 @@ body {
 
     #test li {
         font-size: 18px;
-    }
-
-    #testik {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    #ok {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0px 200px;
     }
 }
 
@@ -129,17 +131,21 @@ body {
         font-size: 18px;
     }
 
-    #testik {
+    #theory {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
-    #ok {
+    #a {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 200px;
     }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 12fr;
+    }
+
 }
 
 @media screen and (960px <=width < 1200px) {
@@ -194,17 +200,21 @@ body {
         font-size: 14px;
     }
 
-    #testik {
+    #theory {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto;
     }
 
-    #ok {
+    #a {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 200px;
     }
+
+    #general {
+        display: grid;
+        grid-template-columns: 1fr 12fr;
+    }
+
 }
 
 @media screen and (width < 960px) {
@@ -275,33 +285,32 @@ body {
         padding-left: 20%;
     }
 
-    #testik {
+    #theory {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr auto;
     }
 
-    #zag {
-        margin-top: 0 !important;
-        padding-top: 30px !important;
-    }
-
-    #ok {
+    #a {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        padding: 0px 40px 40px 40px;
+        grid-template-rows: 1fr auto;
     }
 
-    .vis,
-    .first,
-    .right,
-    .wrong {
-        width: 170px !important;
+    #cell {
+        width: 200px !important;
+        margin: 0 auto !important;
+        display: block !important;
     }
 
-    #end,
-    #ag {
-        width: 140px !important;
+    #imgTheory,
+    #imgTheory2 {
+        width: 200px !important;
     }
+
+    #general {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+
 }
 
 @media screen and (width < 300px) {
@@ -372,133 +381,140 @@ body {
         font-size: 6px;
     }
 
-    #testik {
+    #theory {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr auto;
     }
 
-    #zag {
-        margin-top: 0 !important;
-        padding-top: 30px !important;
-    }
-
-    #ok {
+    #a {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        padding: 0px 40px 40px 40px;
+        grid-template-rows: 1fr auto;
     }
 
-    .vis,
-    .first,
-    .right,
-    .wrong {
-        width: 130px !important;
+    #cell {
+        width: 100px !important;
+        margin: 0 auto !important;
+        display: block !important;
     }
 
-    #end,
-    #ag {
-        width: 120px !important;
+    #imgTheory,
+    #imgTheory2 {
+        width: 100px !important;
     }
-}
 
-.res {
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
+    #general {
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
 }
 
 h1,
 h2,
 h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-#testik {
-    padding: 20px;
-    padding-top: 0;
+#general {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#zag {
-    margin-bottom: 0px;
+#cell {
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+    border: solid 1px var(--border-header);
+    -webkit-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    -moz-box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    box-shadow: 0px 0px 20px 12px var(--bx-shadow);
+    transition: transform 0.7s ease;
+    margin-top: 10px;
+}
+
+#cell:hover {
+    transform: scale(1.2);
+}
+
+#ck {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#genText {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+#bl {
+    margin-bottom: 40px;
+}
+
+#img {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#imgTheory,
+#imgTheory2 {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#org {
+    margin-top: 60px;
+}
+
+#imgTheory2 {
     margin-top: 30px;
 }
 
-.vop {
-    margin-bottom: 20px;
-    margin-top: 40px;
+#structure {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.qus {
-    text-align: center;
+#functions {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.first {
-    padding: 10px 20px;
-    margin: 10px 20px;
-    width: 300px;
+#del,
+#cit,
+#citKl {
     background-color: var(--bg-button21);
     color: var(--text-butt2);
     border: 2px solid var(--border-button);
     transition: 0.7s;
-}
-
-.first:hover {
-    background-color: var(--bg-button1);
-    color: var(--text-butt1);
-}
-
-.vis {
-    padding: 10px 20px;
-    margin: 10px 20px;
-    width: 300px;
-    border: 2px solid var(--border-button);
-    background-color: var(--bg-button1);
-    color: var(--text-butt1);
-}
-
-#end,
-#ag {
-    width: 250px;
+    margin: 0 auto;
     display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-weight: bold;
-    background-color: var(--bg-button21);
-    color: var(--text-butt2);
-    border: 3px solid var(--border-button);
-    transition: 0.7s;
 }
 
-#end:hover,
-#ag:hover {
+#del:hover,
+#cit:hover,
+#citKl:hover {
     background-color: var(--bg-button1);
     color: var(--text-butt1);
 }
 
-.right {
-    padding: 10px 20px;
-    margin: 10px 20px;
-    width: 300px;
-    border: 2px solid var(--border-button);
-    background-color: #16c40a;
-    color: #000000;
+.cont-text {
+    text-align: justify;
 }
 
-.wrong {
-    padding: 10px 20px;
-    margin: 10px 20px;
-    width: 300px;
-    border: 2px solid var(--border-button);
-    background-color: #8f0000;
-    color: #ffffff;
-}
-
-.buttAll {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
+#imgText,
+#imgText2 {
+    text-align: center;
+    margin: 0;
+    font-style: italic;
 }
 
 header {
@@ -507,6 +523,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .log {
@@ -627,8 +644,6 @@ button {
     background-color: var(--bg-button2);
     color: var(--text-butt2);
 }
-
-
 
 :root {
     --text-butt1: #c5d4f3;
