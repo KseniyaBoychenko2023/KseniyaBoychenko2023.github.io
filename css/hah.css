@@ -23,7 +23,7 @@ body {
     }
 
     .menu {
-        padding: 0px 80px 0px 0px;
+        padding: 0px 20px 0px 0px;
     }
 
     .menu li {
@@ -59,7 +59,7 @@ body {
         padding: 130px 0px 20px 0px;
     }
 
-    #test li {
+    #test li, #datetime {
         font-size: 18px;
     }
 }
@@ -76,7 +76,7 @@ body {
     }
 
     .menu {
-        padding: 0px 30px 0px 30px;
+        padding: 0px 10px 0px 30px;
     }
 
     .menu li {
@@ -116,6 +116,11 @@ body {
         font-size: 18px;
     }
 
+    #datetime {
+        font-size: 14px;
+        padding: 0 !important;
+    }
+
 }
 
 @media screen and (960px <=width < 1200px) {
@@ -130,7 +135,7 @@ body {
     }
 
     .menu {
-        padding: 0px 20px 0px 20px;
+        padding: 0px 10px 0px 20px;
     }
 
     .menu li {
@@ -145,7 +150,7 @@ body {
     }
 
     button {
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px 15px;
     }
 
@@ -170,6 +175,11 @@ body {
         font-size: 14px;
     }
 
+    #datetime {
+        font-size: 14px;
+        padding: 0 !important;
+    }
+
 }
 
 @media screen and (width < 960px) {
@@ -183,7 +193,7 @@ body {
     }
 
     .menu {
-        padding: 0px 20px 0px 20px;
+        padding: 0px 10px 0px 20px;
     }
 
     .menu li {
@@ -229,7 +239,7 @@ body {
         padding: 1px;
     }
 
-    #test li {
+    #test li, #datetime {
         font-size: 12px;
     }
 
@@ -242,6 +252,13 @@ body {
 
     .i {
         width: 150px !important;
+    }
+
+    #datetime {
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+        width: 45px !important;
     }
 }
 
@@ -256,7 +273,7 @@ body {
     }
 
     .menu {
-        padding: 0px 20px 0px 20px;
+        padding: 0px 10px 0px 20px;
     }
 
     .menu li {
@@ -309,13 +326,27 @@ body {
         padding-left: 20%;
     }
 
-    #test li {
+    #test li, #datetime {
         font-size: 6px;
     }
 
     .i {
         width: 100px !important;
     }
+
+    #datetime {
+        font-size: 8px;
+        display: block;
+        margin: 0 auto;
+        width: 40px !important;
+        padding: 0 !important;
+    }
+}
+
+#datetime {
+    text-align: center;
+    padding: 0px 10px;
+    width: 140px;
 }
 
 #img {

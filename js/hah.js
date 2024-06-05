@@ -5,6 +5,9 @@
         document.getElementById("dark").addEventListener("click", darkTheme);
         document.getElementById("show").addEventListener("click", showGP);
         document.getElementById("next").addEventListener("click", nextGP);
+        moment.locale('ru'); // Установка локлизации
+        updateDateTime();  // Обновление даты и времени при загрузке
+        setInterval(updateDateTime, 1000);  // Обновление даты и времени каждую секунду
     }
 
     const html = document.querySelector("html");
@@ -70,6 +73,12 @@
             throw Error("Ошибка запроса: " + response.statusText);
         }
         return response;
+    }
+
+    function updateDateTime() {
+        const dateTimeElement = document.getElementById("datetime");
+        const now = moment().format('MMMM Do YYYY, h:mm:ss a');
+        dateTimeElement.innerText = now;
     }
 
 })();
