@@ -55,7 +55,7 @@
     }
 
     function nextGP() {
-        if(n <= 20) {
+        if (n <= 20) {
             n++;
         }
         else {

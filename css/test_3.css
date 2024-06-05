@@ -610,6 +610,7 @@ button {
     font-family: 'Times New Roman', Times, serif;
     border: solid 3px var(--border-button);
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .container {
@@ -628,7 +629,10 @@ button {
     color: var(--text-butt2);
 }
 
-
+.active {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
 
 :root {
     --text-butt1: #c5d4f3;

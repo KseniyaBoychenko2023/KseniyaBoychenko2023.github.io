@@ -610,11 +610,17 @@ button {
     font-family: 'Times New Roman', Times, serif;
     border: solid 3px var(--border-button);
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .container {
     width: 100%;
     background: linear-gradient(90deg, var(--bg-grad1) 0%, var(--bg-grad2) 50%, var(--bg-grad1) 100%);
+}
+
+.active {
+    font-weight: bold !important;
+    text-decoration: underline !important;
 }
 
 #light {
