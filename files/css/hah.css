@@ -239,6 +239,10 @@ body {
         margin: 0;
         padding-left: 20%;
     }
+
+    .i {
+        width: 150px !important;
+    }
 }
 
 @media screen and (width < 300px) {
@@ -308,12 +312,26 @@ body {
     #test li {
         font-size: 6px;
     }
+
+    .i {
+        width: 100px !important;
+    }
+}
+
+#img {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
 }
 
 .i {
-    width: 400px;
+    width: 200px;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 #name {
@@ -325,8 +343,8 @@ body {
     margin: 0;
 }
 
-h1 {
-    text-align: center;
+#buttons {
+    padding-bottom: 30px;
 }
 
 #buttons button {
@@ -335,7 +353,7 @@ h1 {
     border: 2px solid var(--border-button);
     transition: 0.7s;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto 0px auto;
 }
 
 #buttons button:hover {
