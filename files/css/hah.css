@@ -310,6 +310,39 @@ body {
     }
 }
 
+.i {
+    width: 400px;
+    display: block;
+    margin: 20px auto;
+}
+
+#name {
+    text-align: center;
+}
+
+#pers {
+    padding: 20px 40px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buttons button {
+    background-color: var(--bg-button21);
+    color: var(--text-butt2);
+    border: 2px solid var(--border-button);
+    transition: 0.7s;
+    display: block;
+    margin: 10px auto;
+}
+
+#buttons button:hover {
+    background-color: var(--bg-button1);
+    color: var(--text-butt1);
+}
+
 header {
     background-color: var(--bg-color);
     position: fixed;
