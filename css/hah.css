@@ -350,6 +350,9 @@ body {
     text-align: center;
     padding: 0px 10px;
     width: 140px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px !important;
 }
 
 #img {
