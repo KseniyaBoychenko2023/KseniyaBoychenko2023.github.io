@@ -59,7 +59,8 @@ body {
         padding: 130px 0px 20px 0px;
     }
 
-    #test li, #datetime {
+    #test li,
+    #datetime {
         font-size: 18px;
     }
 }
@@ -239,7 +240,8 @@ body {
         padding: 1px;
     }
 
-    #test li, #datetime {
+    #test li,
+    #datetime {
         font-size: 12px;
     }
 
@@ -326,7 +328,8 @@ body {
         padding-left: 20%;
     }
 
-    #test li, #datetime {
+    #test li,
+    #datetime {
         font-size: 6px;
     }
 
